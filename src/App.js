@@ -28,7 +28,7 @@ export default function App() {
     <div className="App">
       <div className="left">
         <Canvas>
-          <axesHelper scale={100} />
+          {/* <axesHelper scale={100} /> */}
           <Lights />
           <Suspense fallback={null}>
             <Model currentCar={currentCar} />
@@ -38,9 +38,64 @@ export default function App() {
         </Canvas>
       </div>
       <div className="right">
-        <span onClick={goLeft}>LEFT</span>
-        <span onClick={goRigt}>RIGHT</span>
-        <h1>{CARS[currentCar].name}</h1>
+        <div className="title">
+          <h1>{CARS[currentCar].name}</h1>
+        </div>
+
+        <div className="stats">
+          <div className="stat">
+            <div className="statName">Speed: </div>
+            <div className="statBarOuter">
+              <div
+                className="statBarInner"
+                style={{
+                  width: `${CARS[currentCar].stats.speed * 10}%`
+                }}
+              ></div>
+            </div>
+          </div>
+
+          <div className="stat">
+            <div className="statName">Handling: </div>
+            <div className="statBarOuter">
+              <div
+                className="statBarInner"
+                style={{
+                  width: `${CARS[currentCar].stats.handling * 10}%`
+                }}
+              ></div>
+            </div>
+          </div>
+
+          <div className="stat">
+            <div className="statName">Acceleration: </div>
+            <div className="statBarOuter">
+              <div
+                className="statBarInner"
+                style={{
+                  width: `${CARS[currentCar].stats.acceleration * 10}%`
+                }}
+              ></div>
+            </div>
+          </div>
+
+          <div className="stat">
+            <div className="statName">Braking: </div>
+            <div className="statBarOuter">
+              <div
+                className="statBarInner"
+                style={{
+                  width: `${CARS[currentCar].stats.braking * 10}%`
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="controls">
+          <img onClick={goLeft} className="leftArrow" src="/Vector.svg" />
+          <img onClick={goRigt} className="rightArrow" src="/Vector.svg" />
+        </div>
       </div>
     </div>
   );
@@ -69,6 +124,7 @@ const Model = ({ currentCar }) => {
         scale={CARS[currentCar].scale}
         position={CARS[currentCar].position}
         rotation={[0.18, 0.67, 0]}
+        dispose={null}
       />
     </>
   );
