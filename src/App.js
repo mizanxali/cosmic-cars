@@ -67,9 +67,8 @@ const Model = ({ currentCar }) => {
       <primitive
         object={gltf.scene}
         scale={CARS[currentCar].scale}
-        // position={[0, 230, -500]}
-        // scale={1}
-        position={[0, 0, 0]}
+        position={CARS[currentCar].position}
+        rotation={[0.18, 0.67, 0]}
       />
     </>
   );
