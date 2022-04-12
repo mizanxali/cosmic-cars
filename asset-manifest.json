@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cosmic-cars/static/css/main.c4542928.css",
+    "main.js": "/cosmic-cars/static/js/main.a66e1630.js",
+    "index.html": "/cosmic-cars/index.html",
+    "main.c4542928.css.map": "/cosmic-cars/static/css/main.c4542928.css.map",
+    "main.a66e1630.js.map": "/cosmic-cars/static/js/main.a66e1630.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4542928.css",
+    "static/js/main.a66e1630.js"
+  ]
+}
