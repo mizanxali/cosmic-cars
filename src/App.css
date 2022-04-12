@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;1,700&display=swap');
+
 .App {
-  font-family: sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   text-align: center;
   height: 100vh;
   width: 100vw;
@@ -11,9 +13,64 @@
   margin: 0;
 }
 
+.mobile {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileBrand {
+  width: 100%;
+  font-size: 8vw;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.mobileContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileText {
+  font-size: 4.5vw;
+  margin: 20px 40px;
+  font-weight: bold;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 8%;
+  width: 100%;
+  font-size: 2vw;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand {
+  margin-left: 5%;
+  margin-top: 9px;
+}
+
+.footer {
+  height: 8%;
+  width: 100%;
+  font-size: 1.1vw;
+}
+
 .showroom {
   display: flex;
-  height: 100%;
+  height: 84%;
   width: 100%;
 }
 
@@ -33,32 +90,31 @@
 
 .title {
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 3.2vw;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .stat {
   width: 100%;
-  display: flex;
-  margin: 10px 0;
+  margin: 2% 0;
 }
 
 .statName {
   width: 20%;
   text-align: left;
-  font-size: 1.3vw;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: gray;
 }
 
 .statBarOuter {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  border: 2px solid black;
-  background-color: black;
-  border-radius: 4px;
+  height: 20px;
 }
 
 .statBarInner {
-  background-color: red;
+  background-color: black;
+  border-radius: 4px;
   height: 100%;
   margin: 5px 1px;
 }
@@ -69,18 +125,10 @@
   justify-content: flex-end;
 }
 
-.leftArrow {
-  filter: invert(31%) sepia(79%) saturate(3987%) hue-rotate(11deg)
-    brightness(101%) contrast(101%);
-  transform: rotateZ(90deg);
-  cursor: pointer;
-  width: 50px;
-}
-
-.rightArrow {
-  filter: invert(31%) sepia(79%) saturate(3987%) hue-rotate(11deg)
-    brightness(101%) contrast(101%);
+.nextArrow {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%)
+    hue-rotate(129deg) brightness(98%) contrast(103%);
   transform: rotateZ(-90deg);
   cursor: pointer;
-  width: 50px;
+  width: 4vw;
 }

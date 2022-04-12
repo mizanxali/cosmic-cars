@@ -132,7 +132,7 @@ const CARS = [
   {
     name: 'Koenigsegg One:1',
     key: 'koenigsegg_one1',
-    scale: 1.58,
+    scale: 1.8,
     position: [0, 0.2, 0],
     description: '',
     stats: {
@@ -145,7 +145,7 @@ const CARS = [
   {
     name: 'Lamborghini Aventador J',
     key: 'lamborghini_aventador_j',
-    scale: 0.005,
+    scale: 0.006,
     position: [0, 0.2, 0],
     description: '',
     stats: {

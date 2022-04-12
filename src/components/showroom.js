@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CARS from '../constants/cars';
 import Canvas from './canvas';
+import CarInfo from './carInfo';
 
 const Showroom = () => {
   const [currentCar, setCurrentCar] = useState(0);
@@ -16,72 +17,27 @@ const Showroom = () => {
   }
 
   return (
-    <div className="showroom">
-      <div className="left">
-        <Canvas currentCar={currentCar} />
+    <div className="container">
+      <div className="header">
+        <span className="brand">Cosmic Cars</span>
       </div>
-      <div className="right">
-        <div className="title">
-          <h1>{CARS[currentCar].name}</h1>
+      <div className="showroom">
+        <div className="left">
+          <Canvas currentCar={currentCar} />
         </div>
-
-        <div className="stats">
-          <div className="stat">
-            <div className="statName">Speed: </div>
-            <div className="statBarOuter">
-              <div
-                className="statBarInner"
-                style={{
-                  width: `${CARS[currentCar].stats.speed * 10}%`
-                }}
-              ></div>
-            </div>
-          </div>
-
-          <div className="stat">
-            <div className="statName">Handling: </div>
-            <div className="statBarOuter">
-              <div
-                className="statBarInner"
-                style={{
-                  width: `${CARS[currentCar].stats.handling * 10}%`
-                }}
-              ></div>
-            </div>
-          </div>
-
-          <div className="stat">
-            <div className="statName">Acceleration: </div>
-            <div className="statBarOuter">
-              <div
-                className="statBarInner"
-                style={{
-                  width: `${CARS[currentCar].stats.acceleration * 10}%`
-                }}
-              ></div>
-            </div>
-          </div>
-
-          <div className="stat">
-            <div className="statName">Braking: </div>
-            <div className="statBarOuter">
-              <div
-                className="statBarInner"
-                style={{
-                  width: `${CARS[currentCar].stats.braking * 10}%`
-                }}
-              ></div>
-            </div>
-          </div>
+        <div className="right">
+          <CarInfo currentCar={currentCar} nextCar={nextCar} />
         </div>
-
-        <div className="controls">
-          <img
-            onClick={nextCar}
-            className="rightArrow"
-            src="/Vector.svg"
-            alt="next-arrow"
-          />
+      </div>
+      <div className="footer">
+        <div>
+          developed by <a href="https://twitter.com/mizanxali">mizanxali</a> ·
+          3D car assets by <a href="https://sketchfab.com/OneSteven">iSteven</a>
+          , licensed under&nbsp;
+          <a href="http://creativecommons.org/licenses/by-nc/4.0/">
+            Creative Commons Attribution-NonCommercial
+          </a>
+          .
         </div>
       </div>
     </div>
