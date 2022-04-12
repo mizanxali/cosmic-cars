@@ -1,6 +1,7 @@
 import './App.css';
 import Showroom from './components/showroom';
 import useWindowSize from './hooks/useWindowSize';
+import rotatePhone from './assets/rotate-phone.png';
 
 export default function App() {
   return (
@@ -19,7 +20,7 @@ const ScreenSizedComponent = () => {
         <div className="mobileBrand">Cosmic Cars</div>
         <div className="mobileContent">
           <div>
-            <img src="/rotate-phone.png" width={100} alt="rotate-phone" />
+            <img src={rotatePhone} width={100} alt="rotate-phone" />
             <div className="mobileText">
               Please rotate your device to browse our cars.
             </div>

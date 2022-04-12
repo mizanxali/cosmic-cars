@@ -1,5 +1,6 @@
 import React from 'react';
 import CARS from '../constants/cars';
+import arrow from '../assets/Vector.svg';
 
 const CarInfo = ({ currentCar, nextCar }) => {
   return (
@@ -60,7 +61,7 @@ const CarInfo = ({ currentCar, nextCar }) => {
         <img
           onClick={nextCar}
           className="nextArrow"
-          src="/Vector.svg"
+          src={arrow}
           alt="next-arrow"
         />
       </div>
