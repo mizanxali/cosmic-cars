@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/cosmic-cars/static/css/main.c4542928.css",
-    "main.js": "/cosmic-cars/static/js/main.a66e1630.js",
+    "main.js": "/cosmic-cars/static/js/main.cd1d6146.js",
     "index.html": "/cosmic-cars/index.html",
+    "static/media/Vector.svg": "/cosmic-cars/static/media/Vector.1b29b645950c569bf30ca593338a0f73.svg",
     "main.c4542928.css.map": "/cosmic-cars/static/css/main.c4542928.css.map",
-    "main.a66e1630.js.map": "/cosmic-cars/static/js/main.a66e1630.js.map"
+    "main.cd1d6146.js.map": "/cosmic-cars/static/js/main.cd1d6146.js.map"
   },
   "entrypoints": [
     "static/css/main.c4542928.css",
-    "static/js/main.a66e1630.js"
+    "static/js/main.cd1d6146.js"
   ]
 }
